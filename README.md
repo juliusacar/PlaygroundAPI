@@ -27,7 +27,7 @@ PlaygroundAPI is focus on retrieving informations from public APIs and display t
 Express.js, Node.js, RESTful APIs, Embedded JavaScript Templating, Body-Parser, Request, Lodash.
 
 ## What can it be use for?
-For other developers having problems on connecting with third party APIs, this repository can guide you on how I developed the code to retrieve the information.
+For other developers having problems on connecting with third party APIs, this repository includes code snippets as a reference on how I developed the code.
 
 ## In the future
 Will include more services from more public APIs.
