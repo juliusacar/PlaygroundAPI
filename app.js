@@ -1,6 +1,6 @@
 // Twilio
-const accountSid = 'ACe9de6d2e7fb705f85318723f823c7582';
-const authToken = '93412c2c8e65f172840a3b4725e99d91';
+const accountSid = 'HIDDEN';
+const authToken = 'HIDDEN';
 const client = require('twilio')(accountSid, authToken);
 
 const express = require('express');
@@ -84,8 +84,8 @@ app.post('/foursquare', (req, res) => {
         url: url,
         method: 'GET',
         qs: {
-            client_id: 'OT2JXMIRKA1PVU2OJ1LCF1SJ412FZRYD252IYQHMPMIXXHBD',
-            client_secret: 'WYJAIVXT3WSD5OBEBHG53RV0XDT1PKB02PVFMX1YZBH4OOCN',
+            client_id: 'hidden',
+            client_secret: 'hidden',
             near: nearPlace,
             query: query,
             v: '20190811',
