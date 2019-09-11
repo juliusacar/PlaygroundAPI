@@ -1,0 +1,60 @@
+<%- include("partial/header") -%>
+
+<h1>Basic API experiments </h1>
+
+<div class="pt-3 pb-3">
+    <hr>
+    <h4>Twilio: Send SMS text to a phone number</h4>
+    <p>https://www.twilio.com</p>
+    <p>Note: On free trial so please ask me for the phone number since it has budget limit.</p>
+
+    <form action="/twilio" method="POST">
+        <input type="text" name="number" placeholder="773319xxxx">
+        <input type="text" name="message" placeholder="Hello world from Julius!">
+        <button type="submit" name="submit">Send SMS</button>
+    </form>
+</div>
+
+<div class="pt-3 pb-3">
+    <hr>
+    <h4>Foursquare: Get Venue Recommendations</h4>
+    <p>https://api.foursquare.com/v2/venues/explore</p>
+    <p>Example: Food && Chicago</p>
+
+    <form action="/foursquare" method="POST">
+        <input type="text" name="query" placeholder="Looking for?">
+        <input type="text" name="nearPlace" placeholder="Near where?">
+        <button type="submit" name="submit">View Recommendations</button>
+    </form>
+</div>
+
+<div class="pt-3 pb-3">
+    <hr>
+    <h4>Bitcoin Average: Convert crypto to fiat based on quantity.</h4>
+    <p>https://apiv2.bitcoinaverage.com/convert/global</p>
+    <p>Example crypto: BTC, BCH, LTC, ETH, DASH</p>
+    <p>Example fiat: USD, MXN, JPY, EUR, KRW</p>
+
+    <form action="/crypto" method="POST">
+        <input type="text" name="crypto" placeholder="FROM: BTC, ETH">
+        <input type="text" name="fiat" placeholder="TO: USD, EUR">
+        <input type="text" name="amount" placeholder="Quantity">
+        <!-- <input type="text" name="target" placeholder="Target Key"> -->
+        <button type="submit" name="submit">See Rates</button>
+    </form>
+</div>
+
+<div class="pt-3 pb-3">
+    <hr>
+    <h4>Openweathermap: Get temperature based on City names.</h4>
+    <p>https://api.openweathermap.org/data/2.5/weather</p>
+    <p>Example targets: main.temp, base, name</p>
+
+    <form action="/weather" method="POST">
+        <input type="text" name="cityName" placeholder="City Name">
+        <button type="submit" name="submit">Get API</button>
+    </form>
+</div>
+
+
+<%- include("partial/footer") -%>
