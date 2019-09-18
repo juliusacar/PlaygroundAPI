@@ -48,7 +48,7 @@ app.post('/crypto', (req, res) => {
 
 app.post('/weather', (req, res) => {
     let cityName = req.body.cityName;
-    let appID = '970cf4a27482f6c171a1a33a9e518226';
+    let appID = 'hidden';
     let url = `https://api.openweathermap.org/data/2.5/weather`;
 
     let options = {
